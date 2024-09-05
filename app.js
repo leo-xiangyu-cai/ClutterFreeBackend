@@ -49,7 +49,7 @@ router.post('/health', async (ctx) => {
 app.use(router.routes()).use(router.allowedMethods());
 
 // Start the server
-const port = 3000;
+const port = 80;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
