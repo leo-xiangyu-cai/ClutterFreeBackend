@@ -44,6 +44,9 @@ router.post('/users', async (ctx) => {
 router.post('/health', async (ctx) => {
   ctx.body = {message: 'Server is running'};
 });
+router.get('/', async (ctx) => {
+  ctx.body = {message: 'Server is running'};
+});
 
 // Apply router middleware
 app.use(router.routes()).use(router.allowedMethods());
