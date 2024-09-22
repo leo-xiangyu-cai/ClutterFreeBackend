@@ -41,7 +41,7 @@ router.post('/users', async (ctx) => {
   ctx.body = newUser;
 });
 
-router.post('/health', async (ctx) => {
+router.get('/health', async (ctx) => {
   ctx.body = {message: 'Server is running'};
 });
 router.get('/', async (ctx) => {
